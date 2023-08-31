@@ -1,0 +1,19 @@
+Algorithm Sort_Insertion(array: array of integer, n: integer)
+    for i = 1 to n - 1 do
+        j = array[i]
+        k = m - 1
+        while k >= 0 and array[k] > j do
+            array[k + 1] = array[k]
+            k = k - 1
+        end while
+        array[k + 1] = j
+    end for
+End Algorithm
+
+Algorithm print(array: array of integer, n: integer)
+    for i = 0 to n - 1 do
+        print array[i]
+    end for
+    print new line
+End Algorithm
+
